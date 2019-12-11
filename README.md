@@ -38,7 +38,7 @@ The funtionalities of the sampletodo are :
 
    PORT MAPPING :
 
-		docker run -p 3000(Container port):3000(Docker host port) IMAGE_NAME
+		docker run -p 3000(Docker host port):3000(Container port) IMAGE_NAME
 
 5.Goto browser :
 
