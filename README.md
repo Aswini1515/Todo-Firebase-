@@ -15,6 +15,8 @@ The funtionalities of the sampletodo are :
                    HOW TO WORK WITH OUR PROJECT:
 
 1 . Git Cloning :
+
+	https://github.com/Aswini1515/TodoFirebase-Docker
     
     
 
@@ -25,20 +27,22 @@ The funtionalities of the sampletodo are :
    open terminal there and run script using sh dscript.sh
 
    This script contains :
+   
+   Note : Image name is myimage1
 
-   * docker image build -t myimage1 . (Create docker image from docker file)
-   * docker run -it myimage1 bash  (This will run image to get container run)
+   * docker image build -t myimage1 .  (Create docker image from docker file)
+   * docker run -it myimage1 bash    (This will run image to get container run)
    
    press ctrl+P and ctrl+Q ( This will take us to out of container without stopping container)
 
 
 4. Execute below command in CMD.
 
-   EXPOSE 3000 (Port)
+   Port : 3000
 
    PORT MAPPING :
 
-		docker run -p 3000(Docker host port):3000(Container port) IMAGE_NAME
+		docker run -p 3000:3000 myimage1
 
 5.Goto browser :
 
