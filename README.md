@@ -1,51 +1,20 @@
-TodoApp - Here data will store in databse (Firebase is the database we used)
+## TodoApp 
 An app that stores the list of activities you make to do. 
-The funtionalities of the sampletodo are : 
-	adding todo 
-	removing todo 
-	updating todo(editing todo)
-	toggling todo 
-	toggling list of todos 
-	filtering 
-	clearing completed todos
 
+## Tech stack
+1. ReactJs - Frontend
+2. Firebase - Database
 
-**************************************************************************************************************************************************************************************************************
+#### The application is responsible for: 
+	1. Adding todo 
+	2. Delete todo 
+	3. Updating todo
+	4. Toggling todo 
+	5. Toggling list of todos 
+	6. Filtering 
+	7. Clearing completed todos
 
-                   HOW TO WORK WITH OUR PROJECT:
-
-1 . Git Cloning :
-
-	https://github.com/Aswini1515/TodoFirebase-Docker
-    
-    
-
-2. Navigate to our project folder
-
-3. There you will find dscript.sh file
-
-   open terminal there and run script using sh dscript.sh
-
-   This script contains :
-
-   * docker image build -t myimage . (Create docker image from docker file)
-   * docker container run --publish 3006:3000 --detach myimage (This will run image to get container and mapped the container port to host port)
-   
-   
-4.Goto browser :
-
-	Browse for :
-
-	
-	http://localhost:3006/ 
-
-
-*************************************************************************************************************************************************************************************************************
-
-
-
-
-
+## Developers Guide
 
 * npm create-react-app appname
 
