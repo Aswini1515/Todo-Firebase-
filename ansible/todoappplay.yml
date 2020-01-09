@@ -1,6 +1,8 @@
 ---
 - hosts: ap-south-1
-  become: True 
+  remote_user: root
+  become: true 
+
   tasks:
     - name: Install git
       yum:
@@ -29,8 +31,11 @@
     - name: Install Docker Module for Python
       pip:
         name: docker
-    - name: copy all files from folder to remote host
-      copy: 
-        src: /home/ashu/React/TodoApp---Firebase/
-        dest: /home/Todo
 
+    - name: Copy project folder to remote host
+      copy:
+        src: /home/ashu/React/TodoApp---Firebase/
+        dest: /usr/local/Todo
+ 
+    - name: Execute the script
+      command: sudo sh /usr/local/Todo/dscript.sh
